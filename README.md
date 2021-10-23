@@ -1,4 +1,4 @@
-https://us05web.zoom.us/j/8848897411?pwd=YnRady96UUhuN3lkK3FUd3JNSHVlZz09
+https://us02web.zoom.us/j/86835532920?pwd=SUE2SSszQ2JXZUZWWFgwTThSckxiZz09
 
 # 참고 사이트 주소
 
