@@ -286,7 +286,99 @@ https://www.w3schools.com/html/html_head.asp
 UTF-8 : universal 문자 인코딩 방식 - 영어를 포함한 세계언어를 표시 가능
 ```
 
+# CSS
 
+## CSS Syntax
+https://www.w3schools.com/css/css_syntax.asp
 
+```
+h1 {
+  color:red;
+  font-size:12px;
+}
+```
 
+## CSS Selector
+https://www.w3schools.com/html/html_id.asp
+https://www.w3schools.com/html/html_classes.asp
+
+### id
+
+- 같은 HTML 페이지에서 고유한 이름으로 사용되어야 함.(한번만 사용되어야 함) => 논리적 개념
+  - id는 프로그래밍 언어에서 변수와 같은 개념
+- 한 HTML 요소에 여러개의 id 이름을 지정할 수 없음
+
+### class
+
+- 같은 HTML 페이지에서 같은 class 이름을 여러번 사용할 수 있음
+- 한 HTML 요소에 여러개의 class 이름을 지정할 수 있음
+
+```
+// HTML
+<p id="paragraph">단락</p>
+<div class="container">콘텐츠</div>
+<div id="para" class="section">구조</div>
+
+// CSS
+- Element 선택자
+p{
+  color:red;
+}
+
+- id 선택자
+#paragraph{
+  color:blue;
+}
+
+- class 선택자
+.container{
+  color:green;
+}
+```
+
+- 선택자 연결 표현
+   - 선택자의 자세한 표현
+
+```
+<p id="para" class="sentence">단락</p>
+
+p#para{}
+
+p.sentence{}
+
+#para.sentence{}
+```
+
+## CSS 작성방식
+
+- External : 외부 파일
+- Internal : html 페이지에 CSS를 작성 - head > style 태그를 사용해서 CSS 코드 작성
+- Inline : HTML 요소에 style attibute를 사용해서 직접 적용
+
+## Color 이론
+
+- 색 혼합 방식
+
+  - 가산 혼합 : 빛 혼합
+    - 혼합하는 색이 많을수록 밝아짐, 모든 색 혼합 => 흰색
+    - 스크린(화면)
+    - 컬러모드 : R(ed)G(reen)B(lue)
+
+  - 감산 혼합 : 잉크 혼합
+    - 혼합하는 색이 많을수록 어두워짐, 모든 색 혼합 => 검정색
+    - 프린터
+    - 컬러모드 : C(yan)M(agenta)Y(ello)(blac)K
+
+- RGB 컬러모드에서 색 표현
+  - 10진수 표현
+  - 16진수 표현
+
+> 컴퓨터에서 사용하는 진법(진수) - 2진수(0,1)
+>
+> 용량 단위
+> - bit : 데이터 저장 최소 단위
+> > 저장 공간 1칸 : 0,1 중에 하나를 저장
+>
+> - byte : 1byte = 8bit
+> > byte < KB < MB < GB < TB
 
