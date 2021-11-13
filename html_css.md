@@ -370,8 +370,14 @@ p.sentence{}
     - 컬러모드 : C(yan)M(agenta)Y(ello)(blac)K
 
 - RGB 컬러모드에서 색 표현
-  - 10진수 표현
-  - 16진수 표현
+  - 각각의 색 표현 용량 : Red(8bit), Green(8bit), Blue(8bit)
+  - 24bit true color : 약 1700만개 색 표현
+  - 10진수 표현(0~9)
+    - rgb(red 값(0~255), green 값(0~255), blue 값(0~255))
+    - Ex) rgb(100,50,245)
+  - 16진수 표현(0~9, A(10),B(11),C(12),D(13),E(14),F(15))
+    - #R(AA)G(0E)B(FF)
+    - Ex) #3A79BF
 
 > 컴퓨터에서 사용하는 진법(진수) - 2진수(0,1)
 >
@@ -381,4 +387,123 @@ p.sentence{}
 >
 > - byte : 1byte = 8bit
 > > byte < KB < MB < GB < TB
+>
+> 용량 계산
+> - 1byte = 8bit가 저장할 수 있는 데이터의 개수 : 256개(0~255)
+
+## CSS 상속
+
+- 조상요소, 부모요소에 적용된 CSS style이 자식요소, 자손요소에 상속되어 적용되는 현상
+- 모든 CSS 속성이 상속되는 것은 아님
+- 모든 HTML Element가 상속되는 것은 아님
+
+```
+<div>
+  <p>단락</p>
+</div>
+
+div{
+  color:red;
+}
+
+* div에 적용한 색이 p에도 상속되어 적용됨
+```
+
+## CSS Property(속성)
+
+- HTML Contents Styling
+  - Text Contents Styling
+  - Multi media Contents Styling
+
+- HTMl Structure Styling
+
+## Text Contents Styling
+
+### CSS Text
+https://www.w3schools.com/css/css_text.asp
+
+- color : text color 지정
+
+```
+p{
+  color:#10c7e3;
+}
+```
+
+- text-align : 텍스트 정렬
+  - left(default), right, center, justify
+
+- text-decoration : 텍스트 줄
+  - overline, line-through, underline, none
+
+- text-indent : 들여쓰기
+
+- letter-spacing :글자 간격
+  - 양수, 음수 사용 가능
+
+- line-height : 줄 높이
+  - 고정값 : px
+  - 배수값 : 소수점 포함, 단위를 표시하지 않음, 글꼴 크기에 비례
+
+- white-space : 줄바꿈 설정
+  - wrap(default), nowrap
+
+### CSS Font
+https://www.w3schools.com/css/css_font.asp
+
+- font-family : 글꼴 종류
+  - 웹페이지에 지정된 Font 파일을 사용자 PC에 설치된 폰트중에서 찾음
+    - 웹 안전 폰트 : 굴림, 돋움, Arial, Verdana ...
+  - FallBack : 글꼴 대비책
+```
+font-family:굴림, 돋움, sans-serif;
+
+1. 굴림 폰트를 렌더링 시도
+2. 돋움 폰트를 렌더링 시도
+3. sans-serif(브라우저 기본폰트) 폰트를 렌더링
+```
+
+- 웹 폰트
+  - 폰트 파일을 서버에 업로드해서, 사용자가 웹사이트에 접속했을 때 똑같은 폰트를 적용할 수 있도록 하는 기술
+  - 웹폰트 파일 형식 : eot, woff, woff2
+
+- 웹폰트 서비스
+  - google font : 영문, 한글
+  - noonnu font : 한글
+
+- 사용빈도가 높은 폰트
+  - 고딕체
+    - 나눔 바른 고딕 : naver
+    - 본고딕(Noto Sans) : Google + Adobe
+
+- font-style
+  - italic : 기울임꼴
+
+- font-weight : 굵기
+  - normal, bold
+  - 100,200,300,400,500,600,700,800,900
+
+- font-size : 크기
+
+### CSS links
+https://www.w3schools.com/css/css_link.asp
+
+- 4가지 상태 구분을 해서 각각 스타일링을 할 수 있음
+
+### CSS List
+https://www.w3schools.com/css/css_list.asp
+
+- 목록에서 자동으로 생성되는 기호, 숫자 제거하고 사용함
+
+### CSS Table
+https://www.w3schools.com/css/css_table.asp
+
+- Table 셀 테두리 사이의 틈을 없애고 사용
+
+## Multi media contents styling
+
+- image
+- video
+
+- 크기 조정, 배치 => Box Styling
 
