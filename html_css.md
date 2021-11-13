@@ -507,3 +507,123 @@ https://www.w3schools.com/css/css_table.asp
 
 - 크기 조정, 배치 => Box Styling
 
+## Box Model
+https://www.w3schools.com/css/css_boxmodel.asp
+
+- HTML element는 박스형태로 표현(디자인)
+- Box Model 구성요소
+  - content : width(가로길이), height(세로길이)
+  - padding(안쪽 여백)
+  - border(테두리)
+  - margin(바깥 여백)
+  - * background(배경) - 박스모델과 연관
+    - background 적용 범위 : content, padding 까지 적용
+
+### height/width
+https://www.w3schools.com/css/css_dimension.asp
+
+- 기본 특징 : height/width를 지정하지 않았을 때 특징
+  - Block
+    - height : 자식요소를 기준으로 맞춰짐
+    - width : 부모요소를 기준으로 채워짐
+  - inline
+    - height/width : 자식요소를 기준으로 맞춰짐
+
+- px : 수치값으로 고정
+- % : 상대적인 크기
+  - 부모 요소를 기준으로 상대적 크기 지정
+  - 부모의 크기가 변경되면 따라서 변경됨(유동형:fluid)
+
+### padding
+https://www.w3schools.com/css/css_padding.asp
+
+> 방향 적용 순서(top에서 시작 시계방향 순서로 적용)
+>
+> top -> right -> bottom -> left
+
+- padding-top
+- padding-right
+- padding-bottom
+- padding-left
+
+- padding 축약 표현(shorthand)
+```
+padding:10px 20px 30px 40px;
+padding:10px 20px 30px;
+padding:10px 20px;
+padding:10px;
+```
+
+### border
+https://www.w3schools.com/css/css_border.asp
+
+- border 축약표현(shorthand)
+```
+border:1px solid red;
+
+* 방향 지정
+border-top:1px solid red;
+border-right:1px solid red;
+border-bottom:1px solid red;
+border-left:1px solid red;
+```
+
+### margin
+
+- padding과 같음
+
+- margin collapse(충돌/상쇄)
+https://www.w3schools.com/css/css_margin_collapse.asp
+
+  - 박스가 위아래 방향으로 놓여있을 때 생기는 현상(좌우 방향에서는 생기지 않음)
+  - 위아래 놓여있는 박스의 사이에 margin을 적용했을 때 margin이 합쳐지지 않고 큰 margin만 적용
+  - 위아래 인접해있는 박스 사이의 margin을 적용할 때 박스 한쪽을 기준으로 적용
+
+### background
+https://www.w3schools.com/css/css_background.asp
+
+- 배경색
+  - background-color
+- 배경이미지
+  - background-image
+  - background-repeat : 배경이미지 반복여부
+  - background-position : 배경이미지 위치
+  - background-attachment : 배경이미지 고정여부
+
+- 투명도
+  - opacity, transparency, alpha
+
+- opacity
+```
+p{
+  opacity:0.5; /* p 요소 전체를 0.5만큼 반투명 설정 */
+}
+```
+- transprency
+```
+h1{
+  background-color:transparent; /* 투명 배경 */
+}
+```
+- alpha
+```
+div{
+  background-color:rgba(200, 135, 80, 0.5) /* 배경색에서 투명도 설정 */
+}
+```
+
+- background-repeat
+  - repeat-x, repeat-y, no-repeat
+
+- background-position
+  - left, center, right / top, center, bottom
+  - px
+```
+h1{
+  background-position : value1 value2
+  /*
+    value1 : 가로방향
+    value2 : 세로방향
+  */
+}
+```
