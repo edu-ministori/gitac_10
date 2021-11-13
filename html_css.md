@@ -415,7 +415,7 @@ div{
   - Text Contents Styling
   - Multi media Contents Styling
 
-- HTMl Structure Styling
+- HTML Structure Styling
 
 ## Text Contents Styling
 
