@@ -113,3 +113,42 @@ https://www.w3schools.com/js/js_datatypes.asp
 - 객체(object)
   - 데이터 집합
 
+- javascript 데이터의 타입을 구분하지 않음
+  - 변수 선언시에 데이터 타입을 구분하지 않음
+  - 데이터 상세 타입을 구분하지 않음
+
+```
+java
+
+int a = 1; // 정수 형태의 데이터, 1byte 크기
+short b = 1; // 정수 형태의 데이터, 2byte 크기
+float c = 1.5; // 실수 형태의 데이터
+String d = "Hello"; // 문자열 데이터
+
+** 변수가 데이터 타입을 구분
+- int 변수에 문자데이터를 저장할 수 없음
+
+javascript
+
+var a = 1;
+var b = "Hello";
+let c = 1;
+let d = "Hello";
+
+** 변수가 데이터 타입을 구분하지 않음
+** typescript 언어 - javascript + 데이터 type을 구분
+```
+
+### 연산자(operator)
+https://www.w3schools.com/js/js_operators.asp
+
+- 할당(assignment) 연산자
+```
+=
+```
+
+- 산술(arithmetic) 연산자
+  - +, -, *, / (사칙연산자)
+  - % : 나머지 연산자
+
+- 할당 연산자 + 산술연산자 축약 표현
