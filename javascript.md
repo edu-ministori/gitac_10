@@ -57,7 +57,59 @@ https://www.w3schools.com/js/js_variables.asp
 
 var a = 0;
 
-** var(variable) : 변수 선언 키워드
+** var(variable) : 변수 선언 키워드, ES5
 ```
 
+```
+Naming 표기법
+- 가독성 : 여러 단어를 사용해서 Naming을 할 때 단어와 단어사이를 구분
+
+car-person-name : kebab case
+car_person_name : snake case
+carPersonName : camel case
+CarPersonName : pascal case
+
+Ex)
+HTML/CSS id, class : kebab case
+file, folder : snake case
+javascript : camel case, pascal case
+```
+
+### js let, const
+https://www.w3schools.com/js/js_let.asp
+https://www.w3schools.com/js/js_const.asp
+
+- ES6에서 추가된 변수 선언 키워드
+
+```
+let a = 0;
+const b = 'abc';
+```
+
+- let
+  - 변수 적용 범위의 변화
+  - 변수 값을 변경 가능
+
+- const(constant-상수)
+  - 변수 적용 범위의 변화
+  - 변수 값을 변경 불가능
+
+### JS Data Type
+https://www.w3schools.com/js/js_datatypes.asp
+
+
+- 숫자
+  - 숫자 데이터 : 정수, 실수
+
+- 문자
+  - 문자 데이터 : 문자(character), 문자열(string)
+
+- 불리언(boolean - 논리데이터)
+  - 참(true), 거짓(false)의 두가지 결과값
+
+- 배열(array)
+  - 데이터가 여러개 나열된 집합
+
+- 객체(object)
+  - 데이터 집합
 
