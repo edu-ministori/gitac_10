@@ -374,6 +374,81 @@ cars.push('kia'); => 마지막 위치에 원소(element)를 추가
 cars.pop() => 마지막 원소를 삭제
 ```
 
+- 배열 데이터를 const로 선언하는 의미
+  - 배열 데이터와 배열 변수는 각각 따로 생성되며, 배열변수에 배열 데이터가 있는 위치 주소가 저장됨.
+  - const로 선언된 배열 변수는 배열 데이터의 위치 주소가 변경될 수 없음.
+  - 배열 데이터는 배열 변수와 따로 생성되었기 때문에 원소(element)의 변경, 추가, 삭제가 가능.
+  - 같은 원소로 구성되는 배열 데이터를 여러개 생성했을 때, 한 개의 배열데이터를 여러개의 배열 변수가 가리킴.
+  - const로 선언된 배열 변수는 다른 배열 데이터로 변경이 될 수 없음.
+
+  ```
+  const a = [1,2,3];
+  const b = [1,2,3];
+  const c = [1,2,3];
+
+  const array = ['a', 'b', 'c'];
+
+  array[0] = 'z'; (O)
+  array = ['x', 'y', 'z']; (X)
+
+  array[0] = 'x'; (O)
+  array[1] = 'y'; (O)
+  array[2] = 'z'; (O)
+  ```
+
+### JS Object(객체)
+
+- Object
+  - 대상을 객관적인 데이터로 표현한 것
+  - Property, Method로 구분
+  - 소속이 정해짐
+
+```
+const person = {
+  firstName : 'John',
+  lastName : 'Doe',
+  age : 20,
+  weight: 70,
+  fullName : function(){}
+}
+
+person.age = 22;
+person.fullName() // 메소드 호출
+```
+
+- 객체 데이터에서 this의 의미
+  - method에서 property를 사용할 때 property가 소속된 객체를 의미
+r
+- 내장 객체(built-in object)
+  - javascript API
+    - String, Number, Array, Math ...
+```
+let a = 3.5;
+Math.floor(3.5) => 3
+```
+
+  - HTML5 API / Browser API
+
+### Class
+
+- 객체 데이터를 생성할 수 있게 해주는 설계도
+- 클래스를 사용해서 여러개의 객체 데이터를 생성할 수 있음
+- constructor : 생성자 함수 - property를 생성
+
+```
+class Car {
+  constructor(){
+    this.name = 'john';
+    this.year = 2021
+  }
+  method이름(){
+    // 실행 코드
+  }
+}
+
+let car1 = new Car();
+=> car1 객체 데이터가 생성
+```
 
 
 
