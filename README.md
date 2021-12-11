@@ -14,6 +14,9 @@ https://github.com/edu-ministori/gitac_10
 
 https://codesandbox.io/s/html-css-2537y?file=/README.md
 
+# 평가문제 주소
+https://forms.gle/sjM2SeMsJswa7TKR6
+
 # Front End Develop
 
 > 제목
